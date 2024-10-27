@@ -1,0 +1,16 @@
+C:\Users\111\Documents\GitHub\DK\bin\Debug\Abilities\Chaos humans login-logout all classes.txt
+C:\Users\111\Documents\GitHub\DK\bin\Debug\Abilities\Dark elves login-logout all classes.txt
+C:\Users\111\Documents\GitHub\DK\bin\Debug\Abilities\Dwarves and their classes login-logout.txt
+C:\Users\111\Documents\GitHub\DK\bin\Debug\Abilities\High elves and their classes login-logout.txt
+C:\Users\111\Documents\GitHub\DK\bin\Debug\Abilities\Humans and their classes login-logout.txt
+C:\Users\111\Documents\GitHub\DK\bin\Debug\Abilities\Orcs login-logout all classes.txt
+C:\Users\111\Documents\GitHub\DK\bin\Debug\WarZone.dll
+C:\Users\111\Documents\GitHub\DK\bin\Debug\NLog.config
+C:\Users\111\Documents\GitHub\DK\bin\Debug\WorldServer.exe.config
+C:\Users\111\Documents\GitHub\DK\bin\Debug\WorldServer.exe
+C:\Users\111\Documents\GitHub\DK\bin\Debug\WorldServer.pdb
+C:\Users\111\Documents\GitHub\DK\WorldServer\obj\x64\Debug\WorldServer.csproj.AssemblyReference.cache
+C:\Users\111\Documents\GitHub\DK\WorldServer\obj\x64\Debug\WorldServer.csproj.CoreCompileInputs.cache
+C:\Users\111\Documents\GitHub\DK\WorldServer\obj\x64\Debug\WorldSer.6CF0E9F2.Up2Date
+C:\Users\111\Documents\GitHub\DK\WorldServer\obj\x64\Debug\WorldServer.exe
+C:\Users\111\Documents\GitHub\DK\WorldServer\obj\x64\Debug\WorldServer.pdb

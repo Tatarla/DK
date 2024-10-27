@@ -17,10 +17,10 @@
   </LogLevel>
   <CharacterDatabase>
     <Server>127.0.0.1</Server>
-    <Port>3306</Port>
+    <Port>27077</Port>
     <Database>war_characters</Database>
-    <Username>root</Username>
-    <Password>password</Password>
+    <Username>Tatarla</Username>
+    <Password>On6CJTBNq</Password>
     <Custom>Treat Tiny As Boolean=False</Custom>
     <Catalog />
     <IPAddress />
@@ -29,10 +29,10 @@
   </CharacterDatabase>
   <WorldDatabase>
     <Server>127.0.0.1</Server>
-      <Port>3306</Port>
+      <Port>27077</Port>
     <Database>war_world</Database>
-    <Username>root</Username>
-    <Password>password</Password>
+    <Username>Tatarla</Username>
+    <Password>On6CJTBNq</Password>
     <Custom>Treat Tiny As Boolean=False</Custom>
     <Catalog />
     <IPAddress />
@@ -55,7 +55,7 @@
   <ChatBetweenRealms>true</ChatBetweenRealms>
   <CreateBothRealms>true</CreateBothRealms>
   <CleanSpawns>true</CleanSpawns>
-  <DiscoverAll>false</DiscoverAll>
+  <DiscoverAll>true</DiscoverAll>
   <OpenRvR>false</OpenRvR>
   <PreloadAllCharacters>true</PreloadAllCharacters>
   <Motd>Welcome to Warhammer Online: Age of Reckoning!</Motd>

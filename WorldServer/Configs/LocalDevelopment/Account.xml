@@ -8,10 +8,10 @@
   </RpcInfo>
   <AccountDB>
     <Server>127.0.0.1</Server>
-    <Port>3306</Port>
+    <Port>27077</Port>
     <Database>war_accounts</Database>
-    <Username>root</Username>
-    <Password>password</Password>
+    <Username>Tatarla</Username>
+    <Password>On6CJTBNq</Password>
     <Custom>Treat Tiny As Boolean=False</Custom>
     <Catalog />
     <IPAddress />

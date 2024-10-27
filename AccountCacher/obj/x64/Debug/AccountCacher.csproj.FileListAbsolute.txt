@@ -1,0 +1,8 @@
+C:\Users\111\Documents\GitHub\DK\bin\Debug\AccountCacher.exe.config
+C:\Users\111\Documents\GitHub\DK\bin\Debug\AccountCacher.exe
+C:\Users\111\Documents\GitHub\DK\bin\Debug\AccountCacher.pdb
+C:\Users\111\Documents\GitHub\DK\AccountCacher\obj\x64\Debug\AccountCacher.csproj.AssemblyReference.cache
+C:\Users\111\Documents\GitHub\DK\AccountCacher\obj\x64\Debug\AccountCacher.csproj.CoreCompileInputs.cache
+C:\Users\111\Documents\GitHub\DK\AccountCacher\obj\x64\Debug\AccountC.597D0695.Up2Date
+C:\Users\111\Documents\GitHub\DK\AccountCacher\obj\x64\Debug\AccountCacher.exe
+C:\Users\111\Documents\GitHub\DK\AccountCacher\obj\x64\Debug\AccountCacher.pdb

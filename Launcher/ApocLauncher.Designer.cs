@@ -2,7 +2,6 @@
 using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using Launcher.Properties;
 
 namespace Launcher
 {
@@ -54,53 +53,49 @@ namespace Launcher
             this.edNewUserCode = new System.Windows.Forms.TextBox();
             this.lblConnection = new System.Windows.Forms.Label();
             this.bnClose = new System.Windows.Forms.Button();
-            this.panelCreateAccount = new System.Windows.Forms.Panel();
-            this.bnCreateLocal = new System.Windows.Forms.Button();
-            this.buttonAccountClose = new System.Windows.Forms.Button();
-            this.buttonCreate = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBoxPassword = new System.Windows.Forms.TextBox();
-            this.textBoxUsername = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.buttonPanelCreateAccount = new System.Windows.Forms.Button();
             this.lblVersion = new System.Windows.Forms.Label();
-            this.bnConnectLocal = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lblDownloading = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.bnMinimise = new System.Windows.Forms.Button();
-            this.panelCreateAccount.SuspendLayout();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // T_username
             // 
-            this.T_username.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.T_username.BackColor = System.Drawing.Color.Black;
+            this.T_username.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.T_username.BackColor = System.Drawing.Color.WhiteSmoke;
             this.T_username.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.T_username.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.T_username.ForeColor = System.Drawing.Color.DarkOrange;
-            this.T_username.Location = new System.Drawing.Point(768, 607);
+            this.T_username.Font = new System.Drawing.Font("Book Antiqua", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.T_username.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.T_username.Location = new System.Drawing.Point(54, 221);
             this.T_username.Margin = new System.Windows.Forms.Padding(0);
             this.T_username.MaxLength = 50;
             this.T_username.Multiline = true;
             this.T_username.Name = "T_username";
-            this.T_username.Size = new System.Drawing.Size(303, 44);
+            this.T_username.Size = new System.Drawing.Size(200, 36);
             this.T_username.TabIndex = 0;
             this.T_username.KeyDown += new System.Windows.Forms.KeyEventHandler(this.T_username_KeyDown);
             // 
             // T_password
             // 
-            this.T_password.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.T_password.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.T_password.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.T_password.BackColor = System.Drawing.Color.WhiteSmoke;
             this.T_password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.T_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.T_password.ForeColor = System.Drawing.Color.DarkOrange;
-            this.T_password.Location = new System.Drawing.Point(768, 655);
+            this.T_password.Font = new System.Drawing.Font("Book Antiqua", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.T_password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.T_password.Location = new System.Drawing.Point(54, 284);
             this.T_password.Margin = new System.Windows.Forms.Padding(0);
             this.T_password.Name = "T_password";
-            this.T_password.Size = new System.Drawing.Size(303, 44);
+            this.T_password.Size = new System.Drawing.Size(200, 36);
             this.T_password.TabIndex = 1;
             this.T_password.UseSystemPasswordChar = true;
             this.T_password.KeyDown += new System.Windows.Forms.KeyEventHandler(this.T_password_KeyDown);
@@ -135,19 +130,20 @@ namespace Launcher
             // 
             // bnConnectToServer
             // 
-            this.bnConnectToServer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bnConnectToServer.BackColor = System.Drawing.Color.Transparent;
+            this.bnConnectToServer.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bnConnectToServer.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.bnConnectToServer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.bnConnectToServer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.bnConnectToServer.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.bnConnectToServer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bnConnectToServer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bnConnectToServer.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bnConnectToServer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bnConnectToServer.Location = new System.Drawing.Point(1095, 607);
+            this.bnConnectToServer.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.bnConnectToServer.ForeColor = System.Drawing.Color.White;
+            this.bnConnectToServer.Location = new System.Drawing.Point(100, 336);
             this.bnConnectToServer.Margin = new System.Windows.Forms.Padding(0);
             this.bnConnectToServer.Name = "bnConnectToServer";
-            this.bnConnectToServer.Size = new System.Drawing.Size(176, 91);
+            this.bnConnectToServer.Size = new System.Drawing.Size(115, 40);
             this.bnConnectToServer.TabIndex = 12;
-            this.bnConnectToServer.Text = "Login";
+            this.bnConnectToServer.Text = "Вход";
             this.bnConnectToServer.UseVisualStyleBackColor = false;
             this.bnConnectToServer.Click += new System.EventHandler(this.bnConnectToServer_Click);
             // 
@@ -210,177 +206,32 @@ namespace Launcher
             // 
             this.lblConnection.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblConnection.BackColor = System.Drawing.Color.Transparent;
-            this.lblConnection.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConnection.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblConnection.Location = new System.Drawing.Point(691, 540);
+            this.lblConnection.Font = new System.Drawing.Font("Bookman Old Style", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblConnection.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblConnection.Location = new System.Drawing.Point(12, 388);
             this.lblConnection.Name = "lblConnection";
-            this.lblConnection.Size = new System.Drawing.Size(577, 24);
+            this.lblConnection.Size = new System.Drawing.Size(286, 24);
             this.lblConnection.TabIndex = 13;
-            this.lblConnection.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblConnection.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bnClose
             // 
             this.bnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bnClose.BackColor = System.Drawing.Color.Transparent;
+            this.bnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.bnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.bnClose.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.bnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bnClose.FlatAppearance.BorderSize = 0;
             this.bnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bnClose.Location = new System.Drawing.Point(1220, 9);
+            this.bnClose.Font = new System.Drawing.Font("Book Antiqua", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bnClose.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bnClose.Location = new System.Drawing.Point(282, -1);
             this.bnClose.Margin = new System.Windows.Forms.Padding(0);
             this.bnClose.Name = "bnClose";
-            this.bnClose.Size = new System.Drawing.Size(51, 49);
+            this.bnClose.Size = new System.Drawing.Size(30, 30);
             this.bnClose.TabIndex = 14;
             this.bnClose.Text = "X";
             this.bnClose.UseVisualStyleBackColor = false;
             this.bnClose.Click += new System.EventHandler(this.bnClose_Click);
-            // 
-            // panelCreateAccount
-            // 
-            this.panelCreateAccount.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panelCreateAccount.BackColor = System.Drawing.Color.Transparent;
-            this.panelCreateAccount.BackgroundImage = global::Launcher.Properties.Resources.background;
-            this.panelCreateAccount.Controls.Add(this.bnCreateLocal);
-            this.panelCreateAccount.Controls.Add(this.buttonAccountClose);
-            this.panelCreateAccount.Controls.Add(this.buttonCreate);
-            this.panelCreateAccount.Controls.Add(this.label3);
-            this.panelCreateAccount.Controls.Add(this.label2);
-            this.panelCreateAccount.Controls.Add(this.textBoxPassword);
-            this.panelCreateAccount.Controls.Add(this.textBoxUsername);
-            this.panelCreateAccount.Controls.Add(this.label1);
-            this.panelCreateAccount.Location = new System.Drawing.Point(366, 177);
-            this.panelCreateAccount.Name = "panelCreateAccount";
-            this.panelCreateAccount.Size = new System.Drawing.Size(590, 309);
-            this.panelCreateAccount.TabIndex = 15;
-            this.panelCreateAccount.Visible = false;
-            // 
-            // bnCreateLocal
-            // 
-            this.bnCreateLocal.BackColor = System.Drawing.Color.Transparent;
-            this.bnCreateLocal.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bnCreateLocal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bnCreateLocal.Location = new System.Drawing.Point(385, 210);
-            this.bnCreateLocal.Name = "bnCreateLocal";
-            this.bnCreateLocal.Size = new System.Drawing.Size(176, 21);
-            this.bnCreateLocal.TabIndex = 23;
-            this.bnCreateLocal.Text = "LOCAL";
-            this.bnCreateLocal.UseVisualStyleBackColor = false;
-            this.bnCreateLocal.Visible = false;
-            this.bnCreateLocal.Click += new System.EventHandler(this.bnCreateLocal_Click);
-            // 
-            // buttonAccountClose
-            // 
-            this.buttonAccountClose.BackColor = System.Drawing.Color.Transparent;
-            this.buttonAccountClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonAccountClose.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.buttonAccountClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAccountClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAccountClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.buttonAccountClose.Location = new System.Drawing.Point(539, 1);
-            this.buttonAccountClose.Margin = new System.Windows.Forms.Padding(0);
-            this.buttonAccountClose.Name = "buttonAccountClose";
-            this.buttonAccountClose.Size = new System.Drawing.Size(51, 44);
-            this.buttonAccountClose.TabIndex = 22;
-            this.buttonAccountClose.Text = "X";
-            this.buttonAccountClose.UseVisualStyleBackColor = false;
-            this.buttonAccountClose.Click += new System.EventHandler(this.buttonAccountClose_Click);
-            // 
-            // buttonCreate
-            // 
-            this.buttonCreate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCreate.ForeColor = System.Drawing.Color.DarkOrange;
-            this.buttonCreate.Location = new System.Drawing.Point(30, 237);
-            this.buttonCreate.Name = "buttonCreate";
-            this.buttonCreate.Size = new System.Drawing.Size(531, 51);
-            this.buttonCreate.TabIndex = 16;
-            this.buttonCreate.Text = "Create";
-            this.buttonCreate.UseVisualStyleBackColor = true;
-            this.buttonCreate.Click += new System.EventHandler(this.buttonCreate_Click);
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label3.Location = new System.Drawing.Point(3, 153);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(272, 53);
-            this.label3.TabIndex = 20;
-            this.label3.Text = "Password";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label2.Location = new System.Drawing.Point(3, 78);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(272, 53);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "Login";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // textBoxPassword
-            // 
-            this.textBoxPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBoxPassword.BackColor = System.Drawing.Color.Black;
-            this.textBoxPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPassword.ForeColor = System.Drawing.Color.DarkOrange;
-            this.textBoxPassword.Location = new System.Drawing.Point(277, 153);
-            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(0);
-            this.textBoxPassword.MaxLength = 50;
-            this.textBoxPassword.Multiline = true;
-            this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.PasswordChar = '*';
-            this.textBoxPassword.Size = new System.Drawing.Size(284, 53);
-            this.textBoxPassword.TabIndex = 17;
-            // 
-            // textBoxUsername
-            // 
-            this.textBoxUsername.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBoxUsername.BackColor = System.Drawing.Color.Black;
-            this.textBoxUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUsername.ForeColor = System.Drawing.Color.DarkOrange;
-            this.textBoxUsername.Location = new System.Drawing.Point(277, 78);
-            this.textBoxUsername.Margin = new System.Windows.Forms.Padding(0);
-            this.textBoxUsername.MaxLength = 50;
-            this.textBoxUsername.Multiline = true;
-            this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.Size = new System.Drawing.Size(284, 52);
-            this.textBoxUsername.TabIndex = 16;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label1.Location = new System.Drawing.Point(3, 2);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(587, 49);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "Create Account";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // buttonPanelCreateAccount
-            // 
-            this.buttonPanelCreateAccount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonPanelCreateAccount.BackColor = System.Drawing.Color.Transparent;
-            this.buttonPanelCreateAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPanelCreateAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPanelCreateAccount.ForeColor = System.Drawing.Color.DarkOrange;
-            this.buttonPanelCreateAccount.Location = new System.Drawing.Point(922, 9);
-            this.buttonPanelCreateAccount.Name = "buttonPanelCreateAccount";
-            this.buttonPanelCreateAccount.Size = new System.Drawing.Size(226, 49);
-            this.buttonPanelCreateAccount.TabIndex = 21;
-            this.buttonPanelCreateAccount.Text = "CREATE ACCOUNT";
-            this.buttonPanelCreateAccount.UseVisualStyleBackColor = false;
-            this.buttonPanelCreateAccount.Click += new System.EventHandler(this.buttonPanelCreateAccount_Click);
             // 
             // lblVersion
             // 
@@ -388,25 +239,10 @@ namespace Launcher
             this.lblVersion.AutoSize = true;
             this.lblVersion.BackColor = System.Drawing.Color.Transparent;
             this.lblVersion.ForeColor = System.Drawing.Color.DarkOrange;
-            this.lblVersion.Location = new System.Drawing.Point(1096, 702);
+            this.lblVersion.Location = new System.Drawing.Point(126, 430);
             this.lblVersion.Name = "lblVersion";
             this.lblVersion.Size = new System.Drawing.Size(0, 13);
             this.lblVersion.TabIndex = 22;
-            // 
-            // bnConnectLocal
-            // 
-            this.bnConnectLocal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bnConnectLocal.BackColor = System.Drawing.Color.Transparent;
-            this.bnConnectLocal.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bnConnectLocal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bnConnectLocal.Location = new System.Drawing.Point(1183, 700);
-            this.bnConnectLocal.Name = "bnConnectLocal";
-            this.bnConnectLocal.Size = new System.Drawing.Size(88, 20);
-            this.bnConnectLocal.TabIndex = 25;
-            this.bnConnectLocal.Text = "LOCAL";
-            this.bnConnectLocal.UseVisualStyleBackColor = false;
-            this.bnConnectLocal.Visible = false;
-            this.bnConnectLocal.Click += new System.EventHandler(this.bnConnectToLocal_Click);
             // 
             // timer1
             // 
@@ -418,80 +254,129 @@ namespace Launcher
             // 
             this.lblDownloading.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblDownloading.BackColor = System.Drawing.Color.Transparent;
-            this.lblDownloading.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDownloading.ForeColor = System.Drawing.Color.DarkOrange;
-            this.lblDownloading.Location = new System.Drawing.Point(700, 576);
+            this.lblDownloading.Font = new System.Drawing.Font("Bookman Old Style", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblDownloading.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblDownloading.Location = new System.Drawing.Point(12, 388);
             this.lblDownloading.Name = "lblDownloading";
-            this.lblDownloading.Size = new System.Drawing.Size(568, 21);
+            this.lblDownloading.Size = new System.Drawing.Size(286, 24);
             this.lblDownloading.TabIndex = 27;
-            this.lblDownloading.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblDownloading.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label4.Location = new System.Drawing.Point(666, 607);
+            this.label4.Font = new System.Drawing.Font("Book Antiqua", 16F);
+            this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label4.Location = new System.Drawing.Point(49, 194);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 37);
+            this.label4.Size = new System.Drawing.Size(84, 27);
             this.label4.TabIndex = 29;
-            this.label4.Text = "Login";
+            this.label4.Text = "Логин:";
             // 
             // label8
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label8.Location = new System.Drawing.Point(610, 654);
+            this.label8.Font = new System.Drawing.Font("Book Antiqua", 16F);
+            this.label8.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label8.Location = new System.Drawing.Point(49, 257);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(158, 37);
+            this.label8.Size = new System.Drawing.Size(95, 27);
             this.label8.TabIndex = 30;
-            this.label8.Text = "Password";
+            this.label8.Text = "Пароль:";
             // 
             // bnMinimise
             // 
             this.bnMinimise.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bnMinimise.BackColor = System.Drawing.Color.Transparent;
+            this.bnMinimise.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.bnMinimise.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.bnMinimise.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.bnMinimise.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bnMinimise.FlatAppearance.BorderSize = 0;
             this.bnMinimise.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bnMinimise.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bnMinimise.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bnMinimise.Location = new System.Drawing.Point(1160, 9);
+            this.bnMinimise.Font = new System.Drawing.Font("Book Antiqua", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bnMinimise.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bnMinimise.Location = new System.Drawing.Point(252, -6);
             this.bnMinimise.Margin = new System.Windows.Forms.Padding(0);
             this.bnMinimise.Name = "bnMinimise";
-            this.bnMinimise.Size = new System.Drawing.Size(51, 49);
+            this.bnMinimise.Size = new System.Drawing.Size(30, 35);
             this.bnMinimise.TabIndex = 31;
             this.bnMinimise.Text = "_";
             this.bnMinimise.UseVisualStyleBackColor = false;
             this.bnMinimise.Click += new System.EventHandler(this.bnMinimise_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.pictureBox2.Location = new System.Drawing.Point(0, -1);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(325, 35);
+            this.pictureBox2.TabIndex = 33;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox5.Location = new System.Drawing.Point(88, 47);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(131, 131);
+            this.pictureBox5.TabIndex = 36;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox6.Location = new System.Drawing.Point(54, 148);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox6.TabIndex = 37;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox7.Location = new System.Drawing.Point(224, 148);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox7.TabIndex = 38;
+            this.pictureBox7.TabStop = false;
             // 
             // ApocLauncher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.BackgroundImage = global::Launcher.Properties.Resources.M55rLv3;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(310, 421);
             this.Controls.Add(this.bnMinimise);
+            this.Controls.Add(this.bnClose);
+            this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.lblDownloading);
-            this.Controls.Add(this.bnConnectLocal);
             this.Controls.Add(this.lblVersion);
-            this.Controls.Add(this.buttonPanelCreateAccount);
-            this.Controls.Add(this.panelCreateAccount);
-            this.Controls.Add(this.bnClose);
-            this.Controls.Add(this.lblConnection);
             this.Controls.Add(this.bnConnectToServer);
             this.Controls.Add(this.lblLauncherServer);
             this.Controls.Add(this.T_password);
             this.Controls.Add(this.T_username);
+            this.Controls.Add(this.lblDownloading);
+            this.Controls.Add(this.lblConnection);
+            this.DoubleBuffered = true;
+            this.ForeColor = System.Drawing.Color.Transparent;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -499,11 +384,13 @@ namespace Launcher
             this.Name = "ApocLauncher";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "WAR: APOCALYPSE";
+            this.Text = "WAR: Dammaz Kron";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Disconnect);
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panelCreateAccount.ResumeLayout(false);
-            this.panelCreateAccount.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -529,23 +416,16 @@ namespace Launcher
         private System.Windows.Forms.Label label7;
         public System.Windows.Forms.Label lblConnection;
         private System.Windows.Forms.Button bnClose;
-        private System.Windows.Forms.Panel panelCreateAccount;
-        private System.Windows.Forms.TextBox textBoxUsername;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBoxPassword;
-        private System.Windows.Forms.Button buttonCreate;
-        private System.Windows.Forms.Button buttonPanelCreateAccount;
         private System.Windows.Forms.Label lblVersion;
-        private System.Windows.Forms.Button bnCreateLocal;
-        private System.Windows.Forms.Button buttonAccountClose;
-        private Button bnConnectLocal;
         private Timer timer1;
         private Label lblDownloading;
         private Label label4;
         private Label label8;
         private Button bnMinimise;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox6;
+        private PictureBox pictureBox7;
     }
 }
 

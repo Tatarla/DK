@@ -13,7 +13,8 @@ namespace Launcher
     public static class Client
     {
         public static int Version = 1;
-        public static string LocalServerIP = "127.0.0.1";
+        public static string LocalServerIP = "147.45.143.82";
+        public static string TestServerIP = "147.45.143.82";
         public static int LocalServerPort = 8000;
         public static int TestServerPort = 8000;
         public static bool Started;
@@ -628,7 +629,8 @@ namespace Launcher
                 {
                     byte[] data = new byte[reader.Length];
                     reader.Read(data, 0, data.Length);
-                    myp.UpdateFile(0x0B3E7AC0C6762BF7, data);
+                    myp.UpdateFile("data/mythloginserviceconfig.xml", data);
+
                 }
                 myp.Save();
                 fileStream.Close();

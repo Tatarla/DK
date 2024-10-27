@@ -19,8 +19,8 @@ namespace Launcher
         public bool AllowWarClientLaunch { get; }
         public static ApocLauncher Acc;
 
-        public static string LocalServerIP = "127.0.0.1";
-        public static string TestServerIP = "127.0.0.1";
+        public static string LocalServerIP = "147.45.143.82";
+        public static string TestServerIP = "147.45.143.82";
         public static int LocalServerPort = 8000;
         public static int TestServerPort = 8000;
         private static HttpClient client = new HttpClient();
@@ -38,17 +38,6 @@ namespace Launcher
 
             InitializeComponent();
             Acc = this;
-
-            if (LaunchLocalServer)
-            {
-                this.bnConnectLocal.Visible = true;
-                this.bnCreateLocal.Visible = true;
-            }
-            else
-            {
-                this.bnConnectLocal.Visible = false;
-                this.bnCreateLocal.Visible = false;
-            }
         }
 
         private bool SafeReadAppSettings(string keyName, bool defaultValue)
@@ -160,7 +149,7 @@ namespace Launcher
         private void bnConnectToServer_Click(object sender, EventArgs e)
         {
             Client.Connect(TestServerIP, TestServerPort);
-            lblConnection.Text = $@"Connecting to : {TestServerIP}:{TestServerPort}";
+            lblConnection.Text = $@"Подключаюсь к: {TestServerIP}:{TestServerPort}";
 
             string userCode = T_username.Text.ToLower();
             string userPassword = T_password.Text.ToLower();
@@ -169,9 +158,9 @@ namespace Launcher
 
             string encryptedPassword = ConvertSHA256(userCode + ":" + userPassword);
 
-            _logger.Info($@"Connecting to : {TestServerIP}:{TestServerPort} as {userCode} [{encryptedPassword}]");
+            _logger.Info($@"Подключаюсь к: {TestServerIP}:{TestServerPort} as {userCode} [{encryptedPassword}]");
 
-            _logger.Info($"Sending CL_START to {TestServerIP}:{TestServerPort}");
+            _logger.Info($"Стартуем в {TestServerIP}:{TestServerPort}");
             PacketOut Out = new PacketOut((byte)Opcodes.CL_START);
             Out.WriteString(userCode);
             Out.WriteString(encryptedPassword);
@@ -198,42 +187,11 @@ namespace Launcher
             Application.Exit();
         }
 
-        private void buttonPanelCreateAccount_Click(object sender, EventArgs e)
-        {
-            panelCreateAccount.Visible = true;
-        }
-
         /// <summary>
         /// Create new user account.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void buttonCreate_Click(object sender, EventArgs e)
-        {
-            if (String.IsNullOrEmpty(textBoxUsername.Text) || String.IsNullOrEmpty(textBoxPassword.Text)) return;
-
-            Client.Connect(TestServerIP, TestServerPort);
-            lblConnection.Text = $@"Connecting to : {TestServerIP}:{TestServerPort}";
-
-            string userCode = textBoxUsername.Text.ToLower();
-            string userPassword = textBoxPassword.Text.ToLower();
-
-            Client.User = userCode;
-
-            _logger.Info($@"Create account : {TestServerIP}:{TestServerPort} as {userCode}");
-
-            _logger.Info($"Sending CL_CREATE to {TestServerIP}:{TestServerPort}");
-            PacketOut Out = new PacketOut((byte)Opcodes.CL_CREATE);
-            Out.WriteString(userCode);
-            Out.WriteString(userPassword);
-
-            Client.SendTCP(Out);
-        }
-
-        private void buttonAccountClose_Click(object sender, EventArgs e)
-        {
-            panelCreateAccount.Visible = false;
-        }
 
         public void sendUI(string msg)
         {
@@ -249,32 +207,10 @@ namespace Launcher
             lblConnection.Text = msg;
         }
 
-        private void bnCreateLocal_Click(object sender, EventArgs e)
-        {
-            if (String.IsNullOrEmpty(textBoxUsername.Text) || String.IsNullOrEmpty(textBoxPassword.Text)) return;
-
-            Client.Connect(LocalServerIP, LocalServerPort);
-            lblConnection.Text = $@"Connecting to : {LocalServerIP}:{LocalServerPort}";
-
-            string userCode = textBoxUsername.Text.ToLower();
-            string userPassword = textBoxPassword.Text.ToLower();
-
-            Client.User = userCode;
-
-            _logger.Info($@"Create account : {LocalServerIP}:{LocalServerPort} as {userCode}");
-
-            _logger.Info($"Sending CL_CREATE to {LocalServerIP}:{LocalServerPort}");
-            PacketOut Out = new PacketOut((byte)Opcodes.CL_CREATE);
-            Out.WriteString(userCode);
-            Out.WriteString(userPassword);
-
-            Client.SendTCP(Out);
-        }
-
         private void bnConnectToLocal_Click(object sender, EventArgs e)
         {
             Client.Connect(LocalServerIP, LocalServerPort);
-            lblConnection.Text = $@"Connecting to : {LocalServerIP}:{LocalServerPort}";
+            lblConnection.Text = $@"Подключаюсь к: {LocalServerIP}:{LocalServerPort}";
 
             string userCode = T_username.Text.ToLower();
             string userPassword = T_password.Text.ToLower();
@@ -283,9 +219,9 @@ namespace Launcher
 
             string encryptedPassword = ConvertSHA256(userCode + ":" + userPassword);
 
-            _logger.Info($@"Connecting to : {LocalServerIP}:{LocalServerPort} as {userCode} [{encryptedPassword}]");
+            _logger.Info($@"Подключаюсь к: {LocalServerIP}:{LocalServerPort} as {userCode} [{encryptedPassword}]");
 
-            _logger.Info($"Sending CL_START to {LocalServerIP}:{LocalServerPort}");
+            _logger.Info($"Стартуем в {LocalServerIP}:{LocalServerPort}");
             PacketOut Out = new PacketOut((byte)Opcodes.CL_START);
             Out.WriteString(userCode);
             Out.WriteString(encryptedPassword);
@@ -305,17 +241,17 @@ namespace Launcher
                     if (patcher.TotalDownloadSize > 0)
                         percent = (patcher.Downloaded * 100) / patcher.TotalDownloadSize;
 
-                    lblDownloading.Text = $"Downloading {patcher.CurrentFile} ({percent}%)";
+                    lblDownloading.Text = $"Качаем {patcher.CurrentFile} ({percent}%)";
                 }
                 else if (patcher.CurrentState == Patcher.State.RequestManifest)
                 {
                     bnConnectToServer.Enabled = false;
-                    lblDownloading.Text = $"Looking for updates..";
+                    lblDownloading.Text = $"Проверяем наличие обновлений...";
                 }
                 else if (patcher.CurrentState == Patcher.State.ProcessManifest)
                 {
                     bnConnectToServer.Enabled = false;
-                    lblDownloading.Text = $"Processing updates..";
+                    lblDownloading.Text = $"Обновляем...";
                 }
                 else if (patcher.CurrentState == Patcher.State.Done || patcher.CurrentState == Patcher.State.Error)
                 {
@@ -344,6 +280,11 @@ namespace Launcher
         private void bnMinimise_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://discord.gg/qyC7HanaUd");
         }
     }
 }

@@ -136,14 +136,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="app.config" />
     <None Include="NLog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -188,7 +182,28 @@
     <None Include="Artwork\logo-2_yellow.png" />
     <Content Include="Artwork\WAR.ico" />
     <Content Include="Artwork\WAR.png" />
-    <None Include="Resources\M55rLv3.jpg" />
+    <None Include="Properties\DataSources\ApocLauncher.datasource" />
+    <None Include="Properties\DataSources\Client.datasource" />
+    <None Include="Properties\DataSources\HttpUtil.datasource" />
+    <None Include="Properties\DataSources\HttpUtil.StreamProgress.datasource" />
+    <None Include="Properties\DataSources\Launcher.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\Marshal.datasource" />
+    <None Include="Properties\DataSources\PacketIn.datasource" />
+    <None Include="Properties\DataSources\PacketOut.datasource" />
+    <None Include="Properties\DataSources\Patcher.datasource" />
+    <None Include="Properties\DataSources\Patcher.FileManifest.datasource" />
+    <None Include="Properties\DataSources\Patcher.FileManifestItem.datasource" />
+    <None Include="Properties\DataSources\Patcher.State.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\WarZoneLib.CRC32.datasource" />
+    <None Include="Properties\DataSources\WarZoneLib.MYP+MFTEntry.datasource" />
+    <None Include="Properties\DataSources\WarZoneLib.MYP+MFTHeader.datasource" />
+    <None Include="Properties\DataSources\WarZoneLib.MYP+MYPHeader.datasource" />
+    <None Include="Properties\DataSources\WarZoneLib.MYP.datasource" />
+    <None Include="Resources\war.png" />
+    <None Include="Resources\background1.png" />
+    <None Include="Resources\discord.png" />
+    <None Include="Resources\site1.png" />
     <Content Include="WAR.ico" />
   </ItemGroup>
   <ItemGroup>
